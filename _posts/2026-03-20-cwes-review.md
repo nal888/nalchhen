@@ -64,7 +64,7 @@ you can't rely on memory for this. i copied important academy concepts, step-by-
 
 the skill assessments at the end of each module aren't really black-box — you already know what vulnerability class you're looking for. in the real exam, you come in with **zero knowledge** of what vulnerabilities the application might have. that's a completely different mindset.
 
-to bridge that gap, i'd recommend doing the **External Testing section** of the Attacking Enterprise Networks module and grinding some HTB machines (see the practice list below). the goal is to build your own black-box methodology for web apps.
+to bridge that gap, grind through some HTB machines (see the practice list below). since the cwes exam is purely web-based, you only need to focus on the **initial web access** — no need for privilege escalation. the goal is to build your own black-box methodology for web apps.
 
 ---
 
