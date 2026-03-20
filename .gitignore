@@ -25,3 +25,7 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Raw Notion exports and examples
+cheatsheet/
+examples/

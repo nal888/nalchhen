@@ -1,0 +1,53 @@
+/* =========================================
+   FORCE all TOC subsections to always show
+   (Override Chirpy collapse behavior)
+========================================= */
+#toc-wrapper .nav-item .nav-item {
+  display: block !important;
+}
+
+#toc-wrapper .nav > .nav-item > .nav {
+  display: block !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#toc-wrapper ul li ul {
+  display: block !important;
+  max-height: 9999px !important;
+  height: auto !important;
+}
+
+#toc-wrapper .collapse:not(.show) {
+  display: block !important;
+}
+
+#toc-wrapper .collapsing {
+  display: block !important;
+  height: auto !important;
+}
+
+/* =========================================
+   Centered Box Info Table (Clean Layout)
+========================================= */
+
+.box-info-table {
+  margin: 2rem auto;
+  width: 70%;
+  max-width: 800px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.box-info-table th {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #9ca3af;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2a2e;
+}
+
+.box-info-table td {
+  padding-top: 12px;
+  font-size: 0.95rem;
+}
