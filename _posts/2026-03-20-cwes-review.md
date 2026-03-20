@@ -11,78 +11,79 @@ image:
 
 so, i did a thing.
 
-as a 2nd-year cyber security student, this certification means a whole lot to me. i spent my entire holiday break grinding through the modules, taking insane amounts of notes, and practicing. then, with exactly one week left before the new university semester started, i decided to just yolo it and hit the "start exam" button.
+i'm a 2nd-year cyber security student and this is my first ever hacking certification. i spent my entire holiday break grinding through the htb academy modules, taking insane amounts of notes, and practising. then with exactly one week left before uni started back up, i just said screw it and hit "start exam".
 
-somehow, through a mix of tryhard mentality, caffeine, and trusting my methodology, **i passed.**
+three days in, i had enough flags to hit the passing score of 80%. the remaining four days i spent almost entirely on polishing my report — more on that later.
 
-here is my honest review of the hack the box **certified web exploitation specialist (CWES)** exam, what the experience was actually like, and a few tips that saved my life during that 7-day sprint.
-
----
-
-## the experience: what is the cwes actually like?
-
-a lot of people compare this to other certs, but htb is just built different. you get **7 days** to compromise **5 different web applications** (going from zero access to full admin) and write a **commercial-grade report**.
-
-the biggest shock for me was how real it felt. these aren't just little ctf challenges built specifically to be hackable — they feel like actual web apps you'd see in a real-world audit. you really have to **chain vulnerabilities together**. you might find something small in one place that gives you the context you need to exploit a completely different app. it's exhausting, but honestly? it's damn cool when everything finally clicks.
-
-because i started it a week before uni, i had to treat it like a full-time job. i put in some massive hours those first few days, but the feeling of submitting that final report before my first day of class was unmatched.
-
-> the exam environment was very stable and felt realistic. these apps are built for actual users, not just built to be "hackable". finding the exploitation steps required deep understanding of the modules and how techniques from one module apply to another.
-{: .prompt-info }
+here's what the experience was actually like and what i'd tell anyone about to take it.
 
 ---
 
-## my top tips for passing
+## the experience
 
-if you are a student or just someone gearing up for this exam, here is what actually worked for me:
+you get **7 days** to compromise **5 different web applications** and write a **commercial-grade penetration test report**.
 
-### 1. document while you hack, not after
+the exam is straightforward in the sense that there's nothing unfair or out of scope, but it's definitely not simple. you can't just throw payloads at a login form and expect a shell. the apps feel like real web apps, not ctf challenges, and you have to get creative with how you chain vulnerabilities together to get from zero to admin.
 
-do not leave the report until the end. set up your template (a lot of people use [SysReptor](https://docs.sysreptor.com/)) before you even connect to the vpn. every time you get a flag or find a vulnerability, write it up immediately. htb grading is strict, and scrambling to write a professional report on day 7 when your brain is fried is a terrible idea.
+i got stuck for hours on two of the apps. both times the vulnerability turned out to be something simple — i was just so tunnel-focused on one approach that i couldn't see it. both times, i stepped away, took a break, came back with a fresh idea, tried it, and it worked. that pattern kept repeating.
 
-> download the CWES SysReptor template and examine it **before** starting the exam. plan out your report writing strategy in advance — don't figure it out during the exam itself.
+this was my first real hacking cert and honestly it taught me a lot about how to look at web applications differently from a security standpoint. before this i'd look at a web app and just see a website. now i look at it and start thinking about what's happening behind every request, every parameter, every redirect. that shift in perspective alone was worth the grind.
+
+---
+
+## the report
+
+htb's report grading is **strict**. like, really strict. they want a proper commercial-quality penetration test report — executive summary, detailed findings with evidence, risk ratings, remediation recommendations, the whole thing.
+
+this is why i spent 4 out of my 7 days on the report even after hitting my passing score. i wasn't taking any chances. my workflow:
+
+- set up [SysReptor](https://docs.sysreptor.com/) with the CWES template **before** starting the exam
+- every time i found a vulnerability or got a flag, i wrote it up immediately with screenshots
+- after i had all my flags, i went back and made sure every finding was clear, well-evidenced, and had proper remediation advice
+- last day was proofreading, formatting, and making sure the executive summary actually made sense
+
+> set up your report template before you even connect to the vpn. do not leave report writing until the end — your brain will be fried and you'll hate yourself.
 {: .prompt-tip }
 
-my report workflow looked something like this:
+---
 
-- **start of engagement** — fill in meta info, scope, and engagement details
-- **during engagement** — write up each finding immediately when discovered. log every flag in the appendix as soon as you get it
-- **end of engagement** — write the executive summary, assessment overview, and recommendations. then tidy up: grammar, proofreading, styling
+## tips
 
-### 2. don't get tunnel vision
+### 1. document as you go
 
-if you are stuck on a target for hours, **step away**. go look at one of the other web apps. it happened to me more than once where looking at a different target gave me a fresh idea for the one i was stuck on.
+seriously. i wrote up findings the moment i confirmed them. if i had left all of that for day 6 or 7, i would've been cooked. screenshots get messy, you forget exact steps, and the quality drops.
 
-> this is genuinely the most common advice from everyone who's passed this cert, and it's common because it works. context-switching resets your brain.
-{: .prompt-tip }
+### 2. move on when you're stuck
 
-### 3. take borderline insane notes
+i wasted so many hours tunnelling on two apps. both times the answer was something i would've seen earlier if i'd just stepped away and looked at a different target first. when you come back with fresh eyes, things that were invisible before suddenly become obvious.
 
-you can't rely on memory for this. i copied important academy concepts, step-by-step writeups for the skills assessments, and made a cheat sheet for every vulnerability class. writing it out in your own words is what builds your muscle memory.
+### 3. take insane notes during your study
 
-### 4. practise black-box testing before the exam
+i went through every academy module and wrote my own notes for each one — commands, techniques, examples, all of it. during the exam i was constantly referencing my own cheatsheet. writing things out in your own words is what makes it stick.
 
-the skill assessments at the end of each module aren't really black-box — you already know what vulnerability class you're looking for. in the real exam, you come in with **zero knowledge** of what vulnerabilities the application might have. that's a completely different mindset.
+### 4. practise black-box web testing
 
-to bridge that gap, grind through some HTB machines (see the practice list below). since the cwes exam is purely web-based, you only need to focus on the **initial web access** — no need for privilege escalation. the goal is to build your own black-box methodology for web apps.
+the skill assessments at the end of each module aren't really black-box — you already know what vulnerability you're looking for. the exam is different. you have zero idea what vulns are present, so you need to test everything.
+
+grind through some HTB machines (see the list below) to build that mindset. since the cwes exam is purely web-based, you only need to focus on the **initial web access** — skip the priv esc, that's not what you're training for here.
 
 ---
 
-## my personal cwes cheatsheet
+## my cwes cheatsheet
 
-speaking of taking insane notes, i actually compiled all of my study materials, tools, and methodologies into a master cheatsheet.
+i compiled all of my study notes into a master cheatsheet that i used heavily during both my prep and the exam itself. it covers every vulnerability class from passive recon to server-side attacks with full command references.
 
-i used this heavily during my holiday prep and during the exam itself. it covers everything from passive recon to server-side attacks, with full command references, tables, and examples for every vulnerability class. i'm sharing it here not to give you a magic key to pass, but to give you a structure to **inspire your own notes**.
+sharing it not as a shortcut to pass, but hopefully to give you a starting point for building your own.
 
-> **check out my [CWES Cheatsheet here](/posts/cwes-cheatsheet/)**
+> **[CWES Cheatsheet](/posts/cwes-cheatsheet/)**
 
 ---
 
 ## htb machines for practice
 
-these are machines i'd recommend for building black-box web testing confidence before the exam. since cwes is purely web-focused, **you only need to practise the initial access / web exploitation foothold** — no need to bother with privilege escalation. once you've popped the web vuln and gotten in, that's the skill you're training.
+these are boxes i'd recommend for building black-box web testing confidence. focus on the **web exploitation foothold only** — once you've popped the initial access, that's the skill you're training for cwes.
 
-> don't feel compelled to complete every single machine. do enough until you feel confident with your black-box web methodology, then go sit the exam.
+> don't feel like you need to do all of these. do enough until you're comfortable finding web vulns without being told what to look for, then go sit the exam.
 {: .prompt-info }
 
 | # | Machine | OS | Key Focus |
@@ -114,8 +115,4 @@ these are machines i'd recommend for building black-box web testing confidence b
 
 ---
 
-## final thoughts
-
-the cwes is genuinely one of the best web security certifications out there. the training material is thorough, the exam is challenging but fair, and the report writing requirement forces you to think like a real consultant — not just a flag hunter.
-
-to anyone else studying for this, especially if you're balancing it with school: drink water, trust your notes, and don't be afraid to just go for it.
+if you're studying for this, especially while balancing uni — just go for it. it's stressful, but it's the kind of stress that actually teaches you something.
