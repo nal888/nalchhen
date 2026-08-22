@@ -9,9 +9,7 @@ image:
   alt: HTB Certified Web Exploitation Specialist
 ---
 
-so, i did a thing.
-
-i'm a 2nd-year cyber security student and this is my first ever hacking certification. i spent my entire holiday break grinding through the htb academy modules, taking insane amounts of notes, and practising. then with exactly one week left before uni started back up, i just said screw it and hit "start exam".
+i passed the htb certified web exploitation specialist exam. i spent my holiday break working through the academy modules, taking notes, and practising, then started the exam with a week left before uni went back.
 
 three days in, i had enough flags to hit the passing score of 80%. the remaining four days i spent almost entirely on polishing my report — more on that later.
 
@@ -91,27 +89,22 @@ these are boxes i'd recommend for building black-box web testing confidence. foc
 | 1 | Bashed | Linux | Web shell, directory discovery |
 | 2 | BountyHunter | Linux | XXE, Python exploitation |
 | 3 | Friendzone | Linux | DNS, LFI |
-| 4 | Bastion | Windows | SMB, VHD mounting |
-| 5 | Return | Windows | Printer abuse, service exploitation |
-| 6 | Heist | Windows | Password cracking, RID cycling |
-| 7 | Cronos | Linux | DNS zone transfer, command injection |
-| 8 | Shibboleth | Linux | IPMI, Zabbix exploitation |
-| 9 | Bastard | Windows | Drupal exploitation |
-| 10 | Sniper | Windows | LFI, RFI |
-| 11 | Alert | Linux | Web enumeration |
-| 12 | Cap | Linux | PCAP analysis, IDOR |
-| 13 | GoodGames | Linux | SQLi, SSTI |
-| 14 | TwoMillion | Linux | API exploitation |
-| 15 | Headless | Linux | XSS, command injection |
-| 16 | Usage | Linux | SQLi, file upload |
-| 17 | OpenSource | Linux | Source code review, Git |
-| 18 | Editorial | Linux | SSRF, API enumeration |
-| 19 | Nineveh | Linux | Brute force, LFI |
-| 20 | Enterprise | Linux | WordPress, SQLi |
-| 21 | Forge | Linux | SSRF |
-| 22 | RedCross | Linux | XSS, SQLi |
-| 23 | Timing | Linux | LFI, mass assignment |
-| 24 | Node | Linux | API exploitation, deserialization |
+| 4 | Cronos | Linux | DNS zone transfer, command injection |
+| 5 | Shibboleth | Linux | IPMI, Zabbix exploitation |
+| 6 | Alert | Linux | Web enumeration |
+| 7 | Cap | Linux | PCAP analysis, IDOR |
+| 8 | GoodGames | Linux | SQLi, SSTI |
+| 9 | TwoMillion | Linux | API exploitation |
+| 10 | Headless | Linux | XSS, command injection |
+| 11 | Usage | Linux | SQLi, file upload |
+| 12 | OpenSource | Linux | Source code review, Git |
+| 13 | Editorial | Linux | SSRF, API enumeration |
+| 14 | Nineveh | Linux | Brute force, LFI |
+| 15 | Enterprise | Linux | WordPress, SQLi |
+| 16 | Forge | Linux | SSRF |
+| 17 | RedCross | Linux | XSS, SQLi |
+| 18 | Timing | Linux | LFI, mass assignment |
+| 19 | Node | Linux | API exploitation, deserialization |
 
 ---
 
