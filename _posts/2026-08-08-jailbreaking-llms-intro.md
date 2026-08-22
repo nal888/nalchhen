@@ -317,6 +317,6 @@ Most of these trace back to the hardware, an 8-core CPU and a 4 GB graphics card
 <span class="what">the local harm classifier used as a judge</span></li>
 </ol>
 
-<p style="opacity:.6;font-size:.85rem">Setup: Qwen2.5-1.5B-Instruct on my own PC (Ryzen 3700X, 4 GB GPU), CPU only. Refusal direction from Arditi et al. 2024; LoRA fine-tuning (Hu et al. 2021); harm by Llama Guard locally, quality by StrongREJECT (Souly et al. 2024), cross-checked with Claude and my hand-labels. The abliteration tool is on my GitHub as <b>refusal-cut</b>.</p>
+<p style="opacity:.6;font-size:.85rem">Setup: Qwen2.5-1.5B-Instruct on my own PC (Ryzen 3700X, 4 GB GPU), CPU only. Refusal direction from Arditi et al. 2024; LoRA fine-tuning (Hu et al. 2021); harm by Llama Guard locally, quality by StrongREJECT (Souly et al. 2024), cross-checked with Claude and my hand-labels. The abliteration tool is on my GitHub as <a href="https://github.com/nal888/refusal-cut"><b>refusal-cut</b></a>.</p>
 
 </div>
