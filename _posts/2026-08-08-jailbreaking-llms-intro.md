@@ -1,9 +1,7 @@
 ---
 title: 'Cutting the "no" out of a language model'
 date: 2026-08-08
-image:
-  path: /assets/img/cutting-the-no-cover.png
-  alt: The word "NO" in bold black type, struck through with a thick red line.
+image: /assets/img/cutting-the-no-cover.png
 categories: [AI Security, LLM Jailbreak]
 tags: [ai, llm, jailbreak, abliteration, lora, red-team, measurement]
 pin: true
