@@ -7,7 +7,7 @@ hi, i'm nal.
 
 Cybersecurity student at **Swinburne University of Technology**, Melbourne.
 
-i spend most of my time studying for **CCNA**, solving boxes on **HackTheBox**, and falling down rabbit holes researching random security stuff that catches my interest.
+i spend most of my time solving boxes on **HackTheBox**, building things, and falling down rabbit holes researching whatever security stuff catches my interest.
 
 i also run **ReanCyberKh**, where i create cybersecurity educational content in Khmer for the Cambodian community.
 this site is my personal portfolio and where i share some of my writeups from doing CTFs and random blog of tech.
