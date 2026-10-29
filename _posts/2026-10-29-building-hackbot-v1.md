@@ -4,6 +4,7 @@ date: 2026-10-29 00:00:00 +1100
 description: "A practical starting point for building a supervised hackbot for bug bounty research."
 categories: [AI Security, Bug Bounty]
 tags: [ai, hackbot, bug-bounty, agents, automation]
+pin: true
 toc: true
 image:
   path: /assets/hackbot-blog/blog-cover.png

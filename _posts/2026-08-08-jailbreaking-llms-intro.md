@@ -4,7 +4,6 @@ date: 2026-08-08
 image: /assets/img/cutting-the-no-cover.png
 categories: [AI Security, LLM Jailbreak]
 tags: [ai, llm, jailbreak, abliteration, lora, red-team, measurement]
-pin: true
 ---
 
 <style>
